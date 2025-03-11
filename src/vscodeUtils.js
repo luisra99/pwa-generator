@@ -10,3 +10,11 @@ export const abrirVSCode = async (basePath) => {
         console.error("❌ No se pudo abrir VSCode.");
     }
 };
+
+export const abrirArchivoVSCode = async (filePath) => {
+    try {
+        await execPromise(`code "${filePath}"`);
+    } catch (codeError) {
+        console.error(chalk.red("❌ Error: No se pudo abrir el archivo en VSCode"), codeError);
+    }
+};

@@ -1,4 +1,8 @@
-# 📦 XETID React PWA CLI  
+Aquí tienes el **README actualizado** con los cambios aplicados al comando `create` 🎯.  
+
+---
+
+### 📦 React PWA CLI  
 
 **Generador de estructura para aplicaciones React PWA**  
 
@@ -9,7 +13,7 @@
 ---
 
 ## 📖 **Descripción**  
-`xetid-react-pwa-cli` es una herramienta CLI que permite crear fácilmente la estructura de archivos y carpetas para proyectos React PWA. Automatiza la configuración inicial del proyecto, incluyendo la configuración de Git, la estructura de carpetas y la conexión con un repositorio remoto.
+`pwa-generator` es una herramienta CLI que permite crear fácilmente la estructura de archivos y carpetas para proyectos React PWA. Automatiza la configuración inicial del proyecto, incluyendo la configuración de Git, la estructura de carpetas y la conexión con un repositorio remoto.
 
 ---
 
@@ -18,7 +22,7 @@
 Para instalarlo globalmente desde **npm**, ejecuta:  
 
 ```sh
-npm install -g xetid-react-pwa-cli
+npm install -g pwa-generator
 ```
 
 ---
@@ -28,16 +32,19 @@ npm install -g xetid-react-pwa-cli
 Después de la instalación, puedes ejecutar el CLI con el comando:  
 
 ```sh
-xetid-pwa-cli <comando>
+pwa-generator <comando>
 ```
 
 ### 🛠 **Comandos Disponibles**  
 
-| Comando               | Descripción |
-|----------------------|-------------|
-| `init`              | Crea un nuevo proyecto React PWA con la estructura base. |
-| `create-page`       | Genera una nueva página dentro del proyecto. |
-| `create-component`  | Crea un nuevo componente dentro del proyecto. |
+| Comando             | Descripción |
+|--------------------|-------------|
+| `init`            | Crea un nuevo proyecto React PWA con la estructura base. |
+| `create <tipo>`   | Genera un nuevo componente o página dentro del proyecto. |
+
+✅ **Opciones para el comando `create`**:  
+- `create component` → Crea un nuevo **componente**  
+- `create page` → Crea una nueva **página**  
 
 ---
 
@@ -45,19 +52,19 @@ xetid-pwa-cli <comando>
 
 ### ✅ **Iniciar un nuevo proyecto**  
 ```sh
-xetid-pwa-cli init
+pwa-generator init
 ```
 El CLI solicitará información como el nombre del proyecto, descripción y la opción de conectarlo a un repositorio Git.
 
 ### ✅ **Crear una nueva página**  
 ```sh
-xetid-pwa-cli create-page
+pwa-generator create page
 ```
 El CLI preguntará el nombre de la página y generará la estructura correspondiente.
 
 ### ✅ **Crear un nuevo componente**  
 ```sh
-xetid-pwa-cli create-component
+pwa-generator create component
 ```
 El CLI solicitará el nombre del componente y lo generará en la carpeta `src/components`.
 
@@ -132,4 +139,4 @@ Este proyecto está bajo la licencia **MIT**. Puedes usarlo y modificarlo librem
 
 ---
 
-¡Gracias por usar **XETID React PWA CLI**! 🎉🚀
+¡Gracias por usar **React PWA CLI**! 🎉🚀  

@@ -1,7 +1,8 @@
 import fs from "fs-extra";
 import path from "path";
+import { fileURLToPath } from "url";
 import { conectarRepositorio } from "./gitUtils.js";
-import { abrirVSCode } from "./vscodeUtils.js";
+import { abrirArchivoVSCode, abrirVSCode } from "./vscodeUtils.js";
 
 const estructuraDeCarpetas = {
     src: {
@@ -44,7 +45,11 @@ const crearEstructura = (base, estructura, templatesPath, respuestas) => {
 
 export const ejecutarComando = async (comando, respuestas) => {
     const basePath = process.cwd();
-    const templatesPath = path.join(basePath, "templates");
+    // Obtiene la ubicación real del CLI
+    const __filename = fileURLToPath(import.meta.url);
+    const __dirname = path.dirname(__filename);
+    const templatesPath = path.join(__dirname, "templates");
+
 
     switch (comando) {
         case "init":
@@ -55,11 +60,17 @@ export const ejecutarComando = async (comando, respuestas) => {
             break;
         case "create-page":
             respuestas.pageName = respuestas.pageName[0].toUpperCase() + respuestas.pageName.slice(1);
-            replaceTags(path.join(templatesPath, "Page.tsx.tpl"), path.join(basePath, "src/pages", respuestas.pageName, `${respuestas.pageName}.tsx`), respuestas);
+            const pagePlantillaPath = path.join(templatesPath, "Page.tsx.tpl");
+            const pageDestinoPath = path.join(basePath, `src/pages/${respuestas.pageName}/${respuestas.pageName}.tsx`);
+            replaceTags(pagePlantillaPath, pageDestinoPath, respuestas);
+            await abrirArchivoVSCode(pageDestinoPath)
             break;
         case "create-component":
             respuestas.componentName = respuestas.componentName[0].toUpperCase() + respuestas.componentName.slice(1);
-            replaceTags(path.join(templatesPath, "Component.tsx.tpl"), path.join(basePath, "src/components", `${respuestas.componentName}.tsx`), respuestas);
+            const componentPlantillaPath = path.join(templatesPath, "Component.tsx.tpl");
+            const componentDestinoPath = path.join(basePath, `src/components/${respuestas.componentName}.tsx`);
+            replaceTags(componentPlantillaPath, componentDestinoPath, respuestas);
+            await abrirArchivoVSCode(componentDestinoPath)
             break;
     }
 };
