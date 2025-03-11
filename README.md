@@ -1,14 +1,10 @@
-Aquí tienes el **README actualizado** con los cambios aplicados al comando `create` 🎯.  
-
----
-
 ### 📦 React PWA CLI  
 
 **Generador de estructura para aplicaciones React PWA**  
 
-[![NPM Version](https://img.shields.io/npm/v/xetid-react-pwa-cli.svg)](https://www.npmjs.com/package/xetid-react-pwa-cli)  
-[![License](https://img.shields.io/npm/l/xetid-react-pwa-cli.svg)](https://opensource.org/licenses/MIT)  
-[![Node.js Version](https://img.shields.io/node/v/xetid-react-pwa-cli.svg)](https://nodejs.org/en/)  
+[![NPM Version](https://img.shields.io/npm/v/pwa-generator.svg)](https://www.npmjs.com/package/pwa-generator)  
+[![License](https://img.shields.io/npm/l/pwa-generator.svg)](https://opensource.org/licenses/MIT)  
+[![Node.js Version](https://img.shields.io/node/v/pwa-generator.svg)](https://nodejs.org/en/)  
 
 ---
 
