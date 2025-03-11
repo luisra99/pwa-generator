@@ -1,15 +1,17 @@
 {
     "name": "pwa-generator",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "main": "index.js",
     "type": "module",
-    "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1"
+    "description": "Generador de plantillas para React",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/luisra99/pwa-generator.git"
     },
+    "homepage": "https://github.com/luisra99/pwa-generator#readme",
     "keywords": [],
     "author": "",
     "license": "ISC",
-    "description": "",
     "dependencies": {
         "chalk": "^5.4.1",
         "commander": "^13.1.0",
