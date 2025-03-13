@@ -1,6 +1,6 @@
 {
     "name": "pwa-generator",
-    "version": "1.0.3",
+    "version": "1.0.4",
     "main": "index.js",
     "type": "module",
     "description": "Generador de plantillas para React",
