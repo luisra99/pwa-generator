@@ -1,10 +1,9 @@
-import manifest from './manifest.json';
-import react from '@vitejs/plugin-react';
+import react from '@vitejs/plugin-react-swc';
 import * as path from 'path';
 import { defineConfig, loadEnv } from 'vite';
 import { VitePWA, VitePWAOptions } from 'vite-plugin-pwa';
 
-export default ({ mode }) => {
+export default ({ mode }:any) => {
   process.env = { ...process.env, ...loadEnv(mode, process.cwd(),''), };
   const pwaOptions: Partial<VitePWAOptions> = {
     base:process.env.ENV_URL,
@@ -13,8 +12,7 @@ export default ({ mode }) => {
     srcDir: 'public',
     filename: 'sw.js',
     manifest: {
-      ...manifest,
-      start_url: `${process.env.ENV_SERVER_URL}`,
+      theme_color: "#fffff"
     },
     includeAssets: ['favicon.svg', 'favicon.ico', 'robots.txt', 'apple-touch-icon.png'],
     // switch to "true" to enable sw on development

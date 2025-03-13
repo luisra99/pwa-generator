@@ -11,13 +11,15 @@ const estructuraDeCarpetas = {
         services: [],
         utils: { mockedData: ["profile.json"] },
         components: [],
+        assets: [],
         "global-states": [],
         interfaces: { forms: [], pages: [], components: [], services: [], hooks: [], utils: [] },
         hooks: [],
         theme: ["Provider.tsx", "themes.ts", "types.ts"],
-        root: ["Root.tsx", "vite-env.d.ts", "main.tsx", "global.css"]
+        root: ["Root.tsx", "vite-env.d.ts", "main.tsx", "global.css", "App.tsx"]
     },
-    root: ["package.json", "tsconfig.json", "README.md", ".env.template", ".gitignore", "manifest.json", "vite.config.ts", "index.html", ".gitlab-ci.yml"]
+    root: ["package.json", "tsconfig.json", "README.md", ".env.template", ".gitignore", "manifest.json", "vite.config.ts", "index.html", ".gitlab-ci.yml", "eslint.config.js", "tsconfig.app.json", "tsconfig.node.json"],
+    public: ["sw.js"]
 };
 
 const replaceTags = (plantillaPath, destinoPath, tags) => {

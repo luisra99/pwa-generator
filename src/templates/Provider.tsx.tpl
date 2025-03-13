@@ -7,7 +7,7 @@ import { ThemeOptions } from "@mui/material";
 // import { overrides } from "@/_pwa-framework/theme/overrides";
 // import { typography } from "@/_pwa-framework/theme/typography";
 // import { customShadows } from "@/_pwa-framework/theme/custom-shadows";
-import themes from "./themes";
+// import themes from "./themes";
 import type { CustomThemeProviderProps } from "./types";
 
 function CustomThemeProvider({ children }: CustomThemeProviderProps) {
