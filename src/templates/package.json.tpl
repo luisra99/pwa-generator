@@ -9,13 +9,14 @@
     "lint": "eslint .",
     "preview": "vite preview --host"
   },
-  "dependencies": {
+ "dependencies": {
     "@emotion/styled": "^11.14.0",
     "@mui/icons-material": "^6.4.7",
     "@mui/material": "^6.4.7",
     "@mui/utils": "^6.4.6",
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0",
+    "faster-router": "^1.0.3",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
     "react-router-dom": "^7.3.0",
     "recoil": "^0.7.7"
   },
