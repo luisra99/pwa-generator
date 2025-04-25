@@ -4,7 +4,8 @@ import { program } from "commander";
 import chalk from "chalk";
 import { escogerComando } from "./prompts.js";
 import { ejecutarComando } from "./fileUtils.js";
-import packageJson from "../package.json";
+const packageJson = require("../package.json");
+
 const logo = `
   ${chalk.bgBlue.white(`REACT PWA CLI v ${packageJson.version}`)}
   ${chalk.yellow("Generador de estructura para React PWA")}
