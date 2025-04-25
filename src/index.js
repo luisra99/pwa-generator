@@ -4,7 +4,7 @@ import { program } from "commander";
 import chalk from "chalk";
 import { escogerComando } from "./prompts.js";
 import { ejecutarComando } from "./fileUtils.js";
-const packageJson = require("../package.json");
+import packageJson from "../package.json" assert { type: "json" };
 
 const logo = `
   ${chalk.bgBlue.white(`REACT PWA CLI v ${packageJson.version}`)}
