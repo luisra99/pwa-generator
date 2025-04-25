@@ -19,9 +19,11 @@
     "react-dom": "19.1.0",
     "react-router-dom": "7.5.2",
     "recoil": "0.7.7",
+    "vite-plugin-pwa": "1.0.0"
   },
   "devDependencies": {
     "@eslint/js": "9.22.0",
+    "@types/node": "22.15.2",
     "@types/react": "19.0.10",
     "@types/react-dom": "19.0.4",
     "@vitejs/plugin-react-swc": "3.8.0",
