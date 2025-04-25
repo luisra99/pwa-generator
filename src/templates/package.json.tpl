@@ -17,7 +17,8 @@
     "faster-sidebar": "1.0.4",
     "react": "19.1.0",
     "react-dom": "19.1.0",
-    "react-router-dom": "7.5.2"
+    "react-router-dom": "7.5.2",
+    "recoil": "0.7.7",
   },
   "devDependencies": {
     "@eslint/js": "9.22.0",

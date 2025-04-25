@@ -42,12 +42,7 @@ function App() {
       CallBackUrlController={() => <h1>Hola mundo!</h1>}
       DashboardLayout={({ children }: any) => (
         <div>
-          <Sidebar
-            routes={myRoutes}
-            navigate={navigate}
-            title="asd"
-            logoPath="asd"
-          />
+          <Sidebar routes={myRoutes} navigate={navigate} title="asd" />
 
           <div style={{ backgroundColor: "red" }}>{children}</div>
         </div>
