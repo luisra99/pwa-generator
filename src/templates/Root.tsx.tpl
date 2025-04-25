@@ -3,6 +3,7 @@ import { createRoot } from "react-dom/client";
 import { RecoilRoot } from "recoil";
 import { Suspense } from "react";
 import { CssBaseline } from "@mui/material";
+import { BrowserRouter } from "react-router-dom";
 
 import "./global.css";
 
@@ -13,12 +14,12 @@ function render(App: ComponentType) {
   root.render(
     <StrictMode>
       <RecoilRoot>
-            <>
-              <CssBaseline />
-                <Suspense>
-                  <App />
-                </Suspense>
-            </>
+        <BrowserRouter>
+          <CssBaseline />
+            <Suspense>
+              <App />
+            </Suspense>
+        <BrowserRouter/>
       </RecoilRoot>
     </StrictMode>
   );

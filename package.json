@@ -1,26 +1,26 @@
 {
-    "name": "pwa-generator",
-    "version": "1.0.6",
-    "main": "index.js",
-    "type": "module",
-    "description": "Generador de plantillas para React",
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/luisra99/pwa-generator.git"
-    },
-    "homepage": "https://github.com/luisra99/pwa-generator#readme",
-    "keywords": [],
-    "author": "",
-    "license": "ISC",
-    "dependencies": {
-        "chalk": "^5.4.1",
-        "commander": "^13.1.0",
-        "fs-extra": "^11.3.0",
-        "inquirer": "^12.4.2",
-        "ora": "^8.2.0",
-        "user": "^0.0.0"
-    },
-    "bin": {
-        "pwa-generator": "./src/index.js"
-    }
+  "name": "pwa-generator",
+  "version": "1.0.7",
+  "main": "index.js",
+  "type": "module",
+  "description": "Generador de plantillas para React",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/luisra99/pwa-generator.git"
+  },
+  "homepage": "https://github.com/luisra99/pwa-generator#readme",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^5.4.1",
+    "commander": "^13.1.0",
+    "fs-extra": "^11.3.0",
+    "inquirer": "^12.4.2",
+    "ora": "^8.2.0",
+    "user": "^0.0.0"
+  },
+  "bin": {
+    "pwa-generator": "./src/index.js"
+  }
 }
